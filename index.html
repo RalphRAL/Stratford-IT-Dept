@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stratford IT Department</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial
+        }
+
+        .navbar {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            /* If enabled it breaks dropdown menu */
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #351954;
+        }
+
+        li {
+            float: right;
+        }
+        .li{
+            float: left;
+        }
+        li a,
+        .mDrop {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .mDrop li:nth-of-type(-n + 1) {
+            float: down;
+        }
+
+        .mDrop {
+            position: relative;
+            top: 13.6rem;
+        }
+
+        li .mDrop {
+            visibility: hidden;
+            opacity: 0;
+            width: 8rem;
+            position: absolute;
+            top: 30px;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        li a:hover,
+        .mDrop:hover .li:hover {
+            background-color: #031427;
+        }
+
+        li:hover>ul,
+        li:focus-within>ul,
+        li ul:hover {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+
+        ul li ul li {
+            clear: both;
+            width: 100%;
+        }
+
+        .active {
+            background-color: #4caf50;
+
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url(images/cover.jpg);
+
+            /* Set a specific height */
+            min-height: 400px;
+            background-size: contain;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .float-container {
+            border: 3px solid #fff;
+            padding: 20px;
+        }
+
+        .parent {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+            height: 50vh;
+        }
+
+        .child1 {
+            width: 50%;
+        }
+
+        .child2 {
+            width: 50%;
+            background-image: url(images/it2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 10%;
+        }
+
+        .child3 {
+            width: 50%;
+        }
+
+        button {
+            height: 3rem;
+            background: #275b91;
+            color: white;
+            border: none;
+            transition: .50s;
+        }
+
+        button:hover {
+            background: #031427;
+            transition: .50s;
+        }
+
+        .child4 {
+            width: 50%;
+            background-image: url(images/self.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 20%;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <nav class="navbar">
+        <ul><br>
+            <li class="li"><a href="#top" style="font-weight: bolder; font-size: 2rem;">Stratford IT</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#his">About</a>
+                <ul class="mDrop">
+                    <li><a href="#his">History</a></li>
+                </ul>
+            </li>
+            <li><a href="#off">What We Offer</a>
+                <li><a href="#itd">IT Department</a>
+                    <ul class="mDrop">
+                        <li><a href="#itd">School Facilities</a></li>
+                        <li><a href="#unif">Uniforms</a></li>
+                    </ul>
+                </li>
+
+            </li>
+            <li><a href="enroll.html">Enrollment Form</a></li>
+            <li><a href="#contacts">Contacts Us</a>
+                <ul class="mDrop">
+                    <li><a href="#contacts">Location Map</a></li>
+                    <li><a href="#contacts">Contact Number</a></li>
+                    <li><a href="#contacts">Email Address</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    
+    </div>
+    <div style="height: 40vh; background:gray ;">
+        <br><br><br>
+        <center><H1 style="font-size: 4rem; color: white;text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;">STRATFORD IT DEPARTMENT</H1></center>
+    </div>
+
+    <hr style="border: 2px solid black; width: 30%;">
+    <br id="his">
+
+    <div class="parent">
+        <div class="child1">
+            <h2 style="margin-left: 5%;">History</h2>
+            <p style="margin-left: 5%; font-size: larger;">From the southern gateway of the
+                Philippines in General Santos city comes the Stratford International School, a private educational
+                institution. The school was founded in 1999 and started its operation in the school year 2000-2001. To
+                meet the challenges of a fast globalizing world, students here are exposed to different cultures
+                ensuring in the process of a tolerant mind toward differences and diversities as it lies at the centers
+                of the state struggle of people for survival and identity. In generations and centuries theses lands
+                have yielded as stories of interminable conflicts and agonies.</p>
+        </div>
+        <div class="child2">
+        </div>
+    </div>
+    <br><br>
+
+    <div id="off" style="background: #351954; color: white; padding: 5%;">
+
+        <center>
+            <h1 id="">What We Offer</h1>
+        </center>
+        <br>
+        <center>
+            <p style="font-size: large; margin-left: 10%; margin-right: 10%;">1.Bachelor of Science in Information Technology<br><br>2. Associate in Computer Technology</p></p>
+        </center>
+
+    </div>
+    </div>
+    <br id="itd"><br>
+    <table style="width: 100%;">
+        <Center><h1>IT Department</h1></Center>
+        <h2 style="margin-left: 5%;">Facilities</h2>
+        <tr>    
+            <td style="width: 33.3; height: 40vh; border: px black solid; height: 100%;"><center><img src="images/it1.jpg" style="width: 75%;"></center></td>
+            <td style="width: 33.3; height: 40vh; border: px black solid;"><img src="images/it2.jpg" style="width: 100%;"></td>
+            <td style="width: 33.3; height: 40vh; border: px black solid;"><img src="images/it3.jpg" style="width: 100%;"></td>
+        </tr>
+    </table>
+    <br id="unif">
+    <table style="width: 100%;">
+        <h2 style="margin-left: 5%;" id="fac">Uniforms</h2>
+        <tr>    
+            <td style="width: 33.3; height: 40vh; border: px black solid; height: 100%;"><center><img src="images/self.jpg" style="width: 75%;"></center></td>
+            <td style="width: 33.3; height: 40vh; border: px black solid;"><img src="images/pic3.jpg" style="width: 100%;"></td>
+            <td style="width: 33.3; height: 40vh; border: px black solid;"><img src="images/grp.jpg" style="width: 100%;"></td>
+        </tr>
+    </table>
+   
+    <div class="parent" style="background: #351954; color: white;">
+        <div class="child1">
+            <br><br><br><br><br>
+            <p style="margin-left: 5%; font-size: larger;">Contact us through email <b>Email Add:
+                    info@stratford.edu.ph</b> or call our number <b>Contact No. 09434849171</b> and telephone number
+                <b>Tel No. 63-83-5541615</b> or <b>(083) 554 1615</b></p>
+        </div>
+        <div class="child3">
+            <br><br><br><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31737.006845389238!2d125.18408999999998!3d6.113754!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f79f95c76509b5%3A0x26bbe323073a1f30!2sStratford%20International%20School!5e0!3m2!1sfil!2sph!4v1686035334378!5m2!1sfil!2sph"
+                width="80%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer style="height: 10vh; background: #351954; color: white; font-size: large;" id="contacts">
+        <br>
+        <center>&copy;Stratford International School | 2023 | All Rights Reserved</center>
+
+    </footer>
+
+
+</body>
+
+</html>
